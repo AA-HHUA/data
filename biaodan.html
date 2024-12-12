@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息填写表单</title>
+    <style>
+        /* 指定页面中文字的字体为 Arial，如果用户计算机中没有 Arial 字体，则使用 sans-serif 作为替代。 */
+        /* 设置页面内容与页面边缘之间的边距为 20 像素。 */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            /* 设置表单的最大宽度为 400 像素。 */
+            /* 在水平方向上将表单居中显示。 */
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input[type="file"],
+        input[type="datetime-local"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>填写信息</h1>
+    <form action="#" method="POST">
+        <label for="message">物品信息:</label>
+        <textarea id="message" name="message" rows="1"></textarea>
+        
+        <label for="datetime-local">时间:</label>
+        <input type="datetime-local" id="datetime-local" name="datetime-local" required>
+        
+        <label for="message">地点:</label>
+        <textarea id="message" name="message" rows="1" required></textarea>
+        
+        <label for="file">文件:</label>
+        <input type="file" id="file-upload" name="file-upload" required>
+        
+        <input type="submit" value="提交">
+    </form>   
+</body>
+</html>

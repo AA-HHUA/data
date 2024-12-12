@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #qrcode {
+            margin: 20px;
+            width: 128px;
+            height: 128px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>扫描二维码登录</h1>
+    <div id="qrcode"></div>
+     <!-- 将 <script> 标签移动到 <body> 的末尾，这可以确保页面的其他内容加载完成后再执行 JavaScript 代码
+    ，避免因为 JavaScript 加载顺序问题导致的错误。  -->
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.qrcode.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            const loginUrl = "https://aa-hhua.github.io/webpage.github.io/login.html"; // 替换为你要生成二维码的链接
+            $("#qrcode").qrcode({
+                text: loginUrl,
+                width: 128,
+                height: 128
+            });
+        });
+    </script>
+</body>
+</html> 

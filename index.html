@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>校园失物招领网</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script>
+	window.onload = function() {
+		// Get the current URL path
+		var path = window.location.pathname;
+		
+		// Redirect based on the URL path
+		if (path === "/" || path === "/index.html") {
+			window.location.href = "index.html";
+		} else if (path === "/denglv.html") {
+			// Do nothing, stay on the current page
+		} else {
+			// Handle other cases or show an error message
+		}
+	};
+	</script>
+</head>
+<body>
+<div class="top">
+	<div class="head">
+		<div class="menu">
+			<ul>
+				<li class="this"><a href="index.html">网站首页</a></li>
+				<li><a href="zhaoling.html">失物招领</a></li>
+				<li><a href="baoshi.html">失物报失</a></li>
+				<li><a href="fabua.html">发布招领</a></li>
+				<li><a href="fabub.html">发布寻物</a></li>
+			</ul>
+		</div>
+		<div class='search'>
+		   <form action='' method='post'>
+		   <input name='title' value='' class='soinput' placeholder='请输入关键字快速搜索'>
+		   <input type='submit' value='搜索' class='sobtn'>
+		   </form>
+	    </div>
+	</div>
+</div>
+<div class="banner"><img src="images/banner.jpg" width="100%"></div>
+<div class="content">
+	<div class="class">
+		<div class="pic"><img src="images/a.jpg" width="100%"></div>
+		<div class="titlea">失物招领</div>
+		<div class="text">
+		<p><a href="zhaoling1.html">在14栋503捡到一个黑色U盘</a></p>
+		<p><a href="zhaoling2.html">在12栋504机房捡到一个蓝牙耳机</a></p>
+		<p><a href="zhaoling3.html">在食堂门口拾到水杯一个</a></p>
+		<p><a href="zhaoling4.html">在教学楼门口捡到手表一只</a></p>
+		</div>
+		<div class="more"><a href="zhaoling.html">查看更多</a></div>
+	</div>
+	<div class="class">
+		<div class="pic"><img src="images/b.jpg" width="100%"></div>
+		<div class="titleb">失物报失</div>
+		<div class="text">
+		<p><a href="baoshi1.html">在实验楼教室丢失一个黑色U盘</a></p>
+		<p><a href="baoshi2.html">丢失一串钥匙带有两个U盘（只知道在学校丢的）</a></p>
+		<p><a href="baoshi3.html">体育场附近丢失一副黑色眼镜</a></p>
+		<p><a href="baoshi4.html">丢失一串钥匙（上面有个U盘）在体育场附近</a></p>
+		</div>
+		<div class="more"><a href="baoshi.html">查看更多</a></div>
+	</div>
+</div>
+<div class="foot">Copyright &copy; 校园失物招领网</div>
+</body>
+</html>
